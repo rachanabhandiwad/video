@@ -67,9 +67,6 @@ document.querySelector("#slider").addEventListener("input", function() {
     // Update the video volume to the slider value (because the slider value is from 0 to 100, we divide by 100)
     video.volume = vsValue / 100;
 
-    // Update the volume information on the page
-    document.querySelector("#volValue").innerHTML = vsValue;
-
     // Get the volume element to display the current volume
     var volumeDisplay = document.querySelector("#volume");
     volumeDisplay.textContent = "Volume: " + Math.round(video.volume*100) + "%"; 
